@@ -61,18 +61,18 @@ function App() {
         <div className=' mb-6 text-xl'>Create strong and secure passwords to keep your account safe online.</div>
         <div className='flex mb-6 flex-wrap items-center w-full  justify-start px-3 gap-7 mobile:justify-evenly'>
           <div className='flex flex-wrap rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] px-2 py-1 
-          items-center justify-between'
+          items-center justify-center w-fit'
           >
-            <div className='text-2xl '>
+            <div className='text-2xl  w-6/12 mobile:w-9/12'>
               <input
                 type="text"
-                className="w-full outline-none cursor-default py-1 px-3 bg-transparent "
+                className="outline-none cursor-default py-1 px-3 bg-transparent"
                 value={password}
                 readOnly
                 ref={PasswordRef}
               />
             </div>
-            <div className='flex'>
+            <div className='flex flex-wrap'>
               <span className="h-4 w-4 ml-3 rounded-xl cursor-default mr-2 shadow-2xl"
               style={{backgroundColor:indicator, boxShadow:`0px 0px 7px 8px ${indicator}`}}
               ></span>
