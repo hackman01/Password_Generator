@@ -56,10 +56,10 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col  justify-center items-center p-3 font-Dosis m-2">
-        <h1 className='text-6xl leading-20 font-extrabold mb-6 font-Ubuntu'>Random Password Generator</h1>
-        <div className=' mb-6 text-xl'>Create strong and secure passwords to keep your account safe online.</div>
-        <div className='flex mb-6 flex-wrap items-center w-full  justify-start px-3 gap-7 mobile:justify-evenly'>
+      <div className="flex flex-col  justify-center items-center p-2 font-Dosis m-2">
+        <h1 className='text-6xl leading-20 font-extrabold px-2 pt-2 pb-1 font-Ubuntu'>Random Password Generator</h1>
+        <div className='p-2 text-xl'>Create strong and secure passwords to keep your account safe online.</div>
+        <div className='p-2 m-2 flex flex-wrap items-center w-full  justify-start gap-3 mobile:justify-evenly'>
           <div className='flex flex-wrap rounded-3xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] px-2 py-1 
           items-center justify-center w-fit'
           >
@@ -76,7 +76,7 @@ function App() {
               <span className="h-4 w-4 ml-3 rounded-xl cursor-default mr-2 shadow-2xl"
               style={{backgroundColor:indicator, boxShadow:`0px 0px 7px 8px ${indicator}`}}
               ></span>
-              <span className="cursor-pointer" onClick={PasswordGenerator}><img className=" ml-3 mr-2 h-5 w-5" src='./src/assets/refresh.png' alt="refresh"></img> </span>
+              <span className="cursor-pointer" onClick={PasswordGenerator}><img className=" ml-3 mr-2 h-5 w-5" src="./public/refresh.png" alt="refresh"></img> </span>
             </div>
 
           </div>
@@ -89,7 +89,7 @@ function App() {
           </button>
         </div>
 
-        <div className="p-3 flex mb-6 text-xl flex-wrap items-center w-full justify-between">
+        <div className="px-2 py-4 m-2 flex  text-xl flex-wrap items-center w-full justify-between">
           <div className='mr-7 mb-3'>
             Password Length:<span className='text-2xl ml-3'>{length}</span>
           </div>
@@ -120,7 +120,7 @@ function App() {
           </div>
         </div>
 
-        <div className="p-3 flex mb-6 text-xl flex-wrap items-center w-full justify-between">
+        <div className="px-2 py-4 m-2 flex text-xl flex-wrap items-center w-full justify-between">
           <div className='text-xl mb-3'>Charactes Used:</div>
           <div className='flex flex-wrap gap-4'>
             <Checkbox id="UpperCase" char="ABC" SetFn={SetCapsChar} cnt={cnt} SetCnt={SetCnt} curr={capsChar} />
