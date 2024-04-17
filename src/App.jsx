@@ -76,7 +76,7 @@ function App() {
               <span className="h-4 w-4 ml-3 rounded-xl cursor-default mr-2 shadow-2xl"
               style={{backgroundColor:indicator, boxShadow:`0px 0px 7px 8px ${indicator}`}}
               ></span>
-              <span className="cursor-pointer" onClick={PasswordGenerator}><img className=" ml-3 mr-2 h-5 w-5" src='src/assets/refresh.png'></img> </span>
+              <span className="cursor-pointer" onClick={PasswordGenerator}><img className=" ml-3 mr-2 h-5 w-5" src='./src/assets/refresh.png' alt="refresh"></img> </span>
             </div>
 
           </div>
